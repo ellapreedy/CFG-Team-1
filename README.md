@@ -1,5 +1,5 @@
 # CFG-Team-1
->Code for our team project created as a part of the Code First Girls Web Development course.
+> This is the code for our team project created as a part of the Code First Girls Web Development course.
 
 
 

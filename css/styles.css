@@ -1,0 +1,268 @@
+/* || General styles */
+
+/* … */
+
+/* || Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+body {
+    font-family: 'Barlow',sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+
+    /* I suggested the other headings be h2 level because then it'll look nicer, so all h1s are currently in white - they're there bt you might not be able to see them! */
+}
+
+h2 {
+    color:#f54996;
+    font-size: 80px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #ffffff
+}
+
+h8 {
+    font-size: 110px;
+    display: inline-block;
+    color: yellow;
+    font-weight: 600;
+    color:#000000;
+    padding: 40px;
+    padding-top: 200px;
+    margin-top: 5;
+}
+
+.project_overview {
+    font-size: 40px;
+    line-height: 100px;
+}
+
+/* || Header and Main Navigation */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+
+h9 {
+    font-family: 'Barlow',sans-serif;
+    color: #f54996;
+    line-height: 1.58;
+    letter-spacing: -.0.003em;
+    font-size: 60px;
+    padding: 40px;
+    text-align: center;
+    font-weight: 800;
+
+}
+/* nav bar*/
+
+nav{
+    font-weight: 650;
+    font-size: 15px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Barlow', sans-serif;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    1:33
+}
+
+nav li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0px 180px;
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
+nav li:hover:not(.active) { /*hover over nav to highlight the nav tab you want to click*/
+    background-color: #f06aa6;
+}
+
+active {/* this doesnt work! want to make teh navbar selected active/higglighted in pink so you knwo the page you are on*/
+    background-color: #f54996;
+}
+
+a:link{
+    text-decoration: none!important;
+}
+
+/* … */
+
+/* Site Banner: CFG readytocode  */
+
+#site_banner {
+
+    background-color: black;
+    padding: 10px;
+    border: 1px;
+    text-align: center;
+    color: #000000;
+}
+
+/* THIS DOESN'T WORK! I can't do inline - trying to align the image with the text horizontally but tbf a table could get round this issue if we need 
+#cfgkickstarter_logo {
+    display: inline-flexbox;
+    float: left;
+    margin: 0 0 0 20px;
+
+}
+
+*/ 
+
+/* || Signup_form */
+
+.signup_form {
+    background-color: #f54996;
+    padding: 10px;
+    border: 1px;
+    text-align: center;
+    color: #ffffff;
+}
+
+input, textarea {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #000000;
+    text-size: 18px;
+}
+
+#form-search {
+    font-size:20px;
+    text-align: center;
+
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 1em auto;
+    height: 1.5em;
+    font-size: 20px;
+    background-color: #f54996;
+    color: #ffffff;
+    border-color: #ffffff;
+    min-width: 100px;
+}
+
+/* … */
+
+/* || Footer */
+
+footer {
+    text-align: right;
+    background-color: black;
+    padding: 10px;
+    border: 1px;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* embedded insta images*/
+
+div.gallery {
+    margin: 50px;
+    float: none;
+    width: 320px;
+    border: 10px solid #ffba47;
+}
+
+div.gallery:hover {
+    border: 10px solid black;
+}
+
+div.gallery img {
+    width: 100%;
+    height:auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+.gallery {
+    float: left;
+    width: 25%;
+}
+
+/* Right column */
+
+.project_overview {
+    float: right;
+    width: 75%;
+    background-color: #f06aa6;
+    padding-left: 20px;
+}
+
+/* logo */
+
+#logo {
+    display: inline-block;
+    margin: 30px; /* margin: 20px was off */
+    float: left;
+    height: 150px;
+    width: auto; /* correct proportions to specified height */
+    border-radius: 50%; /* makes it a circle */
+}
+
+/* group image/matrix pic */
+.matrix_image {
+    display:grid;
+    margin: 200px; /* margin: 20px was off */
+    float:right;
+    height: 100px;
+    width: auto; /* correct proportions to specified height */
+}
+
+/* form search */
+
+input[type=text] {
+    border-radius: 4px;
+    width: 10%;
+    border: 2px solid #f06aa6;
+    color: black;
+    transition: width 0.4s ease-in-out;
+    background-color: #f54996;
+    padding: 12px 20px 12px 40px;
+}
+
+input[type=text]:focus {
+    background-color: #f06aa6;
+    width: 100%;
+}
+
+input[type=text]:focus {
+    border: 3px solid #ffba47;
+}

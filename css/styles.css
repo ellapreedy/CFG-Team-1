@@ -15,12 +15,11 @@ h1 {
     font-size: 60px;
     color: white;
 
-    /* I suggested the other headings be h2 level because then it'll look nicer, so all h1s are currently in white - they're there bt you might not be able to see them! */
 }
 
 h2 {
     color:#f54996;
-    font-size: 80px;
+    font-size: 30px;
 }
 
 h3 {
@@ -122,59 +121,7 @@ a:link{
 
 */ 
 
-/* || Signup_form */
 
-.signup_form {
-    background-color: #f54996;
-    padding: 10px;
-    border: 1px;
-    text-align: center;
-    color: #ffffff;
-}
-
-input, textarea {
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    color: #000000;
-    text-size: 18px;
-}
-
-#form-search {
-    font-size:20px;
-    text-align: center;
-
-}
-
-input[type="submit"] {
-    display: block;
-    margin: 1em auto;
-    height: 1.5em;
-    font-size: 20px;
-    background-color: #f54996;
-    color: #ffffff;
-    border-color: #ffffff;
-    min-width: 100px;
-}
-
-/* … */
-
-/* || Footer */
-
-footer {
-    text-align: right;
-    background-color: black;
-    padding: 10px;
-    border: 1px;
-    color: white;
-}
-
-footer a {
-    color: white;
-}
-
-ul {
-    list-style-type: none;
-}
 
 /* embedded insta images*/
 
@@ -246,23 +193,63 @@ div.desc {
     width: auto; /* correct proportions to specified height */
 }
 
-/* form search */
-
-input[type=text] {
-    border-radius: 4px;
-    width: 10%;
-    border: 2px solid #f06aa6;
-    color: black;
-    transition: width 0.4s ease-in-out;
-    background-color: #f54996;
-    padding: 12px 20px 12px 40px;
-}
-
-input[type=text]:focus {
-    background-color: #f06aa6;
+.signup_banner {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: 6px;
+    border-style: solid;
+    border-color: #F54996;
+    text-align: center !important;
+    color: #F54996;
     width: 100%;
 }
-
+input[type=text] {
+    border-radius: 4px;
+    width: 30%;
+    border: 2px solid #F06AA6;
+    color: #FFFFFF;
+    transition: width 0.4s ease-in-out;
+    background-color: #F54996;
+    padding: 12px 20px 12px 40px;
+    font-size: 18px;
+    vertical-align: center;
+}
 input[type=text]:focus {
-    border: 3px solid #ffba47;
+    background-color: #F06AA6;
+    width: 100%;
+    border: 3px solid #FFBA47;
+}
+input[type=“submit”] {
+    display: block;
+    margin: 1em auto;
+    height: 1.5em;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    color: #F54996;
+    border-color: #F54996;
+    min-width: 100px;
+    
+}
+#form-search {
+    font-size:20px;
+    text-align: center;
+}
+
+/* || Footer */
+
+footer {
+    text-align: right;
+    background-color: black;
+    padding: 10px;
+    border: 1px;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
 }

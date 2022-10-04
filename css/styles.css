@@ -181,6 +181,14 @@ div.desc {
     border-radius: 50%; /* makes it a circle */
 }
 
+/* Pictures */
+
+/* Team Member Pictures */
+
+.team_member_image {
+    max-width: 500px;
+
+}
 /* group image/matrix pic */
 .matrix_image {
     display:grid;
@@ -188,6 +196,12 @@ div.desc {
     float:right;
     height: 100px;
     width: auto; /* correct proportions to specified height */
+}
+
+/* Specifics for the Our Team page : Team gallery overview of page  - it was very narrow for reasons I wasn't sure about*/
+
+#team_overview {
+    max-width: 1000px;
 }
 
 /* Bottom banner */

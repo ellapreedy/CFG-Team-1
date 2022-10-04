@@ -14,7 +14,7 @@ body {
 h1 {
     font-size: 60px;
     color: white;
-
+    text-transform: uppercase;
 }
 
 h2 {
@@ -116,12 +116,9 @@ a:link{
     display: inline-flexbox;
     float: left;
     margin: 0 0 0 20px;
-
 }
 
 */ 
-
-
 
 /* embedded insta images*/
 

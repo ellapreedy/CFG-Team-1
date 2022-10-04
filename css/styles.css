@@ -193,6 +193,8 @@ div.desc {
     width: auto; /* correct proportions to specified height */
 }
 
+/* Bottom banner */
+
 .signup_banner {
     background-color: #FFFFFF;
     padding: 10px;

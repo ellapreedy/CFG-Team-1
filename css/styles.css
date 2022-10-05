@@ -15,7 +15,7 @@ h1 {
     font-size: 60px;
     color: white;
 
-    /* I suggested the other headings be h2 level because then it'll look nicer, so all h1s are currently in white - they're there but you might not be able to see them! */
+    /* I suggested the other headings be h2 level because then it'll look nicer, so all h1s are currently in white - they're there bt you might not be able to see them! */
 }
 
 h2 {
@@ -30,14 +30,13 @@ h3 {
 
 h8 {
     font-size: 110px;
-    display: block;
+    display: inline-block;
     color: yellow;
     font-weight: 600;
     color:#000000;
-    padding: 0;
-    padding-top: 50px;
-    margin-top: 0;
-    text-align: left;
+    padding: 40px;
+    padding-top: 200px;
+    margin-top: 5;
 }
 
 .project_overview {
@@ -58,11 +57,11 @@ h9 {
     padding: 40px;
     text-align: center;
     font-weight: 800;
-    display:block;
+
 }
 /* nav bar*/
 
-nav {
+nav{
     font-weight: 650;
     font-size: 15px;
     list-style-type: none;
@@ -88,11 +87,11 @@ nav a {
     color: white;
 }
 
-nav li:hover { /*hover over nav to highlight the nav tab you want to click*/
+nav li:hover:not(.active) { /*hover over nav to highlight the nav tab you want to click*/
     background-color: #f06aa6;
 }
 
-nav li.active {
+active {/* this doesnt work! want to make teh navbar selected active/higglighted in pink so you knwo the page you are on*/
     background-color: #f54996;
 }
 
@@ -113,45 +112,56 @@ a:link{
     color: #000000;
 }
 
-/* Team gallery */
+/* THIS DOESN'T WORK! I can't do inline - trying to align the image with the text horizontally but tbf a table could get round this issue if we need 
+#cfgkickstarter_logo {
+    display: inline-flexbox;
+    float: left;
+    margin: 0 0 0 20px;
 
-#team_overview {
-    float:right;
 }
+
+*/ 
 
 /* || Signup_form */
 
-.signup_form {
-    background-color: #f54996;
+.signup_banner {
+    background-color: #FFFFFF;
     padding: 10px;
-    border: 1px;
-    text-align: center;
-    color: #ffffff;
+    border: 6px;
+    border-style: solid;
+    border-color: #F54996;
+    text-align: center !important;
+    color: #F54996;
+    width: 100%;
 }
-
-input, textarea {
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    color: #000000;
-    text-size: 18px;
+input[type=text] {
+    border-radius: 4px;
+    width: 30%;
+    border: 2px solid #F06AA6;
+    color: #FFFFFF;
+    transition: width 0.4s ease-in-out;
+    background-color: #F54996;
+    padding: 12px 20px 12px 40px;
+    font-size: 18px;
+    vertical-align: center;
 }
-
-#form-search {
-    font-size:20px;
-    text-align: center;
-
+input[type=text]:focus {
+    background-color: #F06AA6;
+    width: 100%;
+    border: 3px solid #FFBA47;
 }
-
-input[type="submit"] {
+input[type=“submit”] {
     display: block;
     margin: 1em auto;
     height: 1.5em;
-    font-size: 20px;
-    background-color: #f54996;
-    color: #ffffff;
-    border-color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    color: #F54996;
+    border-color: #F54996;
     min-width: 100px;
 }
+
 
 /* … */
 
@@ -237,29 +247,19 @@ div.desc {
 /* group image/matrix pic */
 .matrix_image {
     display:grid;
-    margin: 200px; /* margin: 20px was off */
+    margin: 20px; /* margin: 20px was off */
     float:right;
     height: 100px;
     width: auto; /* correct proportions to specified height */
 }
 
 /* form search */
+#form-search {
+    font-size:20px;
+    text-align: center;
+} 
 
-input[type=text] {
-    border-radius: 4px;
-    width: 10%;
-    border: 2px solid #f06aa6;
-    color: black;
-    transition: width 0.4s ease-in-out;
-    background-color: #f54996;
-    padding: 12px 20px 12px 40px;
-}
+  
 
-input[type=text]:focus {
-    background-color: #f06aa6;
-    width: 100%;
-}
 
-input[type=text]:focus {
-    border: 3px solid #ffba47;
-}
+

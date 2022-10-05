@@ -21,6 +21,8 @@ h1 {
 h2 {
     color:#f54996;
     font-size: 80px;
+    padding: 15px;
+    text-align: center;
 }
 
 h3 {
@@ -35,7 +37,7 @@ h8 {
     font-weight: 600;
     color:#000000;
     padding: 40px;
-    padding-top: 200px;
+    padding-top: 20px;
     margin-top: 5;
 }
 
@@ -57,7 +59,7 @@ h9 {
     padding: 40px;
     text-align: center;
     font-weight: 800;
-
+    display: block;
 }
 /* nav bar*/
 
@@ -87,11 +89,11 @@ nav a {
     color: white;
 }
 
-nav li:hover:not(.active) { /*hover over nav to highlight the nav tab you want to click*/
+nav li:hover { /*hover over nav to highlight the nav tab you want to click*/
     background-color: #f06aa6;
 }
 
-active {/* this doesnt work! want to make teh navbar selected active/higglighted in pink so you knwo the page you are on*/
+nav li.active {
     background-color: #f54996;
 }
 
@@ -112,15 +114,15 @@ a:link{
     color: #000000;
 }
 
-/* THIS DOESN'T WORK! I can't do inline - trying to align the image with the text horizontally but tbf a table could get round this issue if we need 
-#cfgkickstarter_logo {
-    display: inline-flexbox;
-    float: left;
-    margin: 0 0 0 20px;
+/* */
 
+#team_overview {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 25%;
+    height: auto;
 }
-
-*/ 
 
 /* || Signup_form */
 
@@ -163,7 +165,28 @@ input[type=“submit”] {
 }
 
 
-/* … */
+/* team gallery */
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
 
 /* || Footer */
 
@@ -185,18 +208,18 @@ ul {
 
 /* embedded insta images*/
 
-div.gallery {
+div.insta_gallery {
     margin: 50px;
     float: none;
     width: 320px;
     border: 10px solid #ffba47;
 }
 
-div.gallery:hover {
+div.insta_gallery:hover {
     border: 10px solid black;
 }
 
-div.gallery img {
+div.insta_gallery img {
     width: 100%;
     height:auto;
 }
@@ -214,7 +237,6 @@ div.desc {
     padding: 0 6px;
     float: left;
     width: 24.99999%;}
-
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */

@@ -23,6 +23,7 @@ h2 {
     font-size: 80px;
     padding: 15px;
     text-align: center;
+    display: inline-block;
 }
 
 h3 {
@@ -106,7 +107,6 @@ a:link{
 /* Site Banner: CFG readytocode  */
 
 #site_banner {
-
     background-color: black;
     padding: 10px;
     border: 1px;
@@ -170,8 +170,8 @@ input[type=“submit”] {
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+    display: flexbox;
+    width: 350px;
   }
   
   div.gallery:hover {
@@ -186,6 +186,7 @@ div.gallery {
   div.desc {
     padding: 15px;
     text-align: center;
+    width: auto;
   }
 
 /* || Footer */

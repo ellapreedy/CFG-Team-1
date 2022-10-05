@@ -22,6 +22,7 @@ h2 {
     color:#f54996;
     font-size: 80px;
     padding: 15px;
+    padding-bottom: none;
     text-align: center;
     display: inline-block;
 }
@@ -33,19 +34,21 @@ h3 {
 
 h8 {
     font-size: 110px;
-    display: inline-block;
+    display: block;
     color: yellow;
     font-weight: 600;
     color:#000000;
     padding: 40px;
     padding-top: 20px;
+    padding-right: 40px;
     margin-top: 5;
+    text-align: left;
 }
 
 h4 {
     color:#f54996;
     font-size: 60px;
-    padding: 15px;
+    padding: 0;
     text-align: center;
     display: inline-block;
 }
@@ -144,22 +147,25 @@ a:link{
     color: #F54996;
     width: 100%;
 }
+
 input[type=text] {
     border-radius: 4px;
     width: 30%;
     border: 2px solid #F06AA6;
     color: #FFFFFF;
     transition: width 0.4s ease-in-out;
-    background-color: #F54996;
+    background-color: #F06AA6;
     padding: 12px 20px 12px 40px;
     font-size: 18px;
     vertical-align: center;
 }
+
 input[type=text]:focus {
     background-color: #F06AA6;
     width: 100%;
     border: 3px solid #FFBA47;
 }
+
 input[type=“submit”] {
     display: block;
     margin: 1em auto;
@@ -197,7 +203,8 @@ div.gallery {
   
   div.gallery img {
     width: 100%;
-    height: auto;
+    height: 60%;
+    align-items: center;
   }
   
   div.team_desc {
@@ -284,22 +291,39 @@ div.desc {
     border-radius: 50%; /* makes it a circle */
 }
 
-/* group image/matrix pic */
-.matrix_image {
-    display:grid;
-    margin: 20px; /* margin: 20px was off */
-    float:right;
-    height: 100px;
-    width: auto; /* correct proportions to specified height */
+/* group image */
+.group_photo {
+    float: left;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 40%;
+    height: 50%;
 }
 
 /* form search */
 #form-search {
     font-size:20px;
     text-align: center;
-} 
+    padding: 10px;
+    padding-top: none;
+    margin-top: none;
+}
 
-  
+div.button input[type="submit"] {
+    display: block;
+    margin: 1em auto;
+    height: 1.5em;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    color: #F54996;
+    border-color: #F54996;
+    min-width: 100px;
+    vertical-align: center;
+ }
 
-
-
+ .project_desc {
+    font-size: 30px;
+ }
